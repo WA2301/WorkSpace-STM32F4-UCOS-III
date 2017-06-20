@@ -1,0 +1,30 @@
+SET PATH=C:\Keil_v5\ARM\ARMCC\Bin;C:\Program Files (x86)\STMicroelectronics\st_toolset\asm;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;c:\altera\91\quartus\bin
+SET CPU_TYPE=STM32F407IEHx
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=STM32F40_41xxx
+SET CPU_CLOCK=0x00B71B00
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\main.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_it.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\task0_bluetooth.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\task1_esam.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\task2_led.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\task3_ad7606.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\task4_calculation.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\system_stm32f4xx.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_flash.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_spi.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_dbgmcu.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_tim.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_i2c.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_usart.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_crc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\misc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_fsmc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_exti.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_rcc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_gpio.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_syscfg.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\stm32f4xx_dma.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via "stm32f40_41xxx\startup_stm32f40_41xxx._ia"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "stm32f40_41xxx\readme.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via "STM32F40_41xxx\STM32F40_41xxx.lnp"

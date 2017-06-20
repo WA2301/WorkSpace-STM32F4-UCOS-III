@@ -1,0 +1,13 @@
+#忽略以下文件
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.hex
+*.lnp
+*.map
+*.sct
+*.bak
+*.axf
+*.iex
