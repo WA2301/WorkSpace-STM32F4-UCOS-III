@@ -8,6 +8,11 @@
   *           stm32f4xx.h line 144
   *          APB1,APB2分频系数不为1,所以对应定时器为时钟源的2倍[见参考手册P107]
   *          USE_STDPERIPH_DRIVER,STM32F40_41xxx,HSE_VALUE=24000000,ARM_MATH_CM4
+  
+  *          移植更改:1.Option For Target -> C/C++ HSE_VALUE=24000000
+                                                   VECT_TAB_OFFSET=0x4000
+                                          -> Target IROM1 0x8004000
+                      2.system_stm32f4xx.c #define PLL_M      24
   ******************************************************************************
   */
 /**

@@ -21,14 +21,6 @@ static  CPU_STK  Task00Stk[
                  TASK00_STK_SIZE];
         void     Task00 (void *p_arg);
 
-/*************** Task01 Configuration *****************************************/
-#define          TASK01_STK_SIZE                     128u
-#define          TASK01_PRIO                           3u
-        OS_TCB   Task01TCB;
-static  CPU_STK  Task01Stk[
-                 TASK01_STK_SIZE];
-        void     Task01 (void *p_arg);
-
 /*************** End of Task Configuration ************************************/
 
 /**
@@ -66,22 +58,6 @@ int main(void)
                                   TASK00_STK_SIZE / 10u],
                  (CPU_STK_SIZE  ) TASK00_STK_SIZE,
                  (OS_MSG_QTY    )0u,
-                 (OS_TICK       )0u,
-                 (void         *)0u,
-                 (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR |
-                                  OS_OPT_TASK_SAVE_FP),
-                 (OS_ERR       *)&err);
-                 
-    /**************************************************************************/
-    /********************* Create Task01 **************************************/
-    OSTaskCreate((OS_TCB       *)&Task01TCB,    (CPU_CHAR     *)"",
-                 (OS_TASK_PTR   ) Task01,       (void         *)0u,
-                 (OS_PRIO       ) TASK01_PRIO,
-                 (CPU_STK      *)&Task01Stk[0u],
-                 (CPU_STK_SIZE  ) Task01Stk[
-                                  TASK01_STK_SIZE / 10u],
-                 (CPU_STK_SIZE  ) TASK01_STK_SIZE,
-                 (OS_MSG_QTY    )5u,
                  (OS_TICK       )0u,
                  (void         *)0u,
                  (OS_OPT        )(OS_OPT_TASK_STK_CHK | OS_OPT_TASK_STK_CLR |
